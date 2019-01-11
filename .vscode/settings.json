@@ -1,0 +1,7 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "files.exclude": {
+        "**/*.class": true
+    },
+    "files.autoSave": "afterDelay"
+}

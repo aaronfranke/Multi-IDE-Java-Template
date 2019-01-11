@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "verify",
+            "type": "shell",
+            "command": "mvn -B verify && echo ' '",
+            "group": "build"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "mvn -B verify && echo ' ' && java -jar target/testing123-0.0.jar",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "mvn -B test",
+            "group": "test"
+        }
+    ]
+}
